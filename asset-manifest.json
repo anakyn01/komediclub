@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/komediclub/static/css/main.1c16c4cc.css",
+    "main.js": "/komediclub/static/js/main.6923cbf2.js",
+    "static/js/453.5d020ee6.chunk.js": "/komediclub/static/js/453.5d020ee6.chunk.js",
+    "index.html": "/komediclub/index.html",
+    "main.1c16c4cc.css.map": "/komediclub/static/css/main.1c16c4cc.css.map",
+    "main.6923cbf2.js.map": "/komediclub/static/js/main.6923cbf2.js.map",
+    "453.5d020ee6.chunk.js.map": "/komediclub/static/js/453.5d020ee6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c16c4cc.css",
+    "static/js/main.6923cbf2.js"
+  ]
+}

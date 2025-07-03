@@ -1,4 +1,6 @@
 /*노트북 & 태블릿 가로 : 1024px-1279px*/
+$mainColor:#fbb0c7;
+
 @media all and (min-width:769px) and (max-width:3200px){
 html{
     width:430px;
@@ -57,7 +59,7 @@ height: 40px;
 
     }
     .banner-wrap{
-    margin-top: 30%;
+    //margin-top: 30%;
         img{
         border-radius: 10px;
         width:100%;
@@ -145,21 +147,22 @@ letter-spacing: -1px;
 }
 .icon {
     background-color: rgba(255, 255, 255, 0);
+    height:80px;
     text-align: center;
     width: 100%;
+                  max-width: 100%;
     margin: 5px;
     border: 0px solid #ccc;
         cursor: pointer;
         .icon-pic {
-        height: 36px;
         max-height: 100%;
             img {
                 text-align: center;
-                width: 70%;
-                max-width: 100%;
+  
+                height:60px ;
             }
             .icon-bottom-text {
-                margin-top: 5px;
+                margin-top: 10px;
                 font-size: 0.7em;
                 color: #999999;
                 text-align: center;
@@ -267,4 +270,16 @@ margin-top:5px !important;
 @import "size";
 @import "fontsize";
 
+.header-icon {
+  height: 50px;
+}
+
+.icon-scrollbar {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.icon-scrollbar::-webkit-scrollbar {
+  display: none;
+}
     

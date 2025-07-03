@@ -1,148 +1,77 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+  const [showAll, setShowAll] = useState(false); // 전체 보기 상태
+
+  const icons = [
+    { src: "icon1.png", label: "안면윤곽" },
+    { src: "icon2.png", label: "양악수술" },
+    { src: "icon3.png", label: "임플란트" },
+    { src: "icon4.png", label: "피부" },
+    { src: "icon5.png", label: "지방흡입" },
+    { src: "icon6.png", label: "코" },
+    { src: "icon7.png", label: "가슴" },
+    { src: "icon8.png", label: "눈" },
+    { src: "icon9.png", label: "보톡스" },
+    { src: "icon10.png", label: "리프팅" },
+    { src: "icon11.png", label: "모발이식" },
+    { src: "icon12.png", label: "다이어트" },
+    { src: "icon13.png", label: "반영구화장" },
+    { src: "icon14.png", label: "제모" },
+    { src: "icon15.png", label: "한방" },
+  ];
+
   return (
     <>
-      <nav className="pink p-2 ">
-        <div className="d-flex justify-content-between align-items-center">
-          <a>
-            <img src="/komediclub/image/lefticon.png"/>
-          </a>
-          <a>
-            <img src="/komediclub/image/logo.png"/>
-          </a>
-          <a>
-            <img src="/komediclub/image/person.png"/>
-          </a>
-        </div>
-
+      {/* 상단 네비게이션 */}
+      <nav className="pink px-3 py-2 d-flex justify-content-between align-items-center">
+        <img src="/komediclub/image/lefticon.png" />
+        <img src="/komediclub/image/logo.png" />
+        <img src="/komediclub/image/person.png" />
       </nav>
-        <div className="bg-white p-2 nav-bottom-bar d-flex justify-content-between align-items-center">
-          <a>
-            All
-          </a>
 
-     <div class="button-container">
-      <button class="btn ">
-        <div className="pw">
-          <img src="/komediclub/image/icon1.png" className="header-icon"/>
-          <div>안면윤곽</div>
-        </div>
-               
-        </button>
-      <button class="btn ">
-        <div className="pw">
-          <img src="/komediclub/image/icon2.png" className="header-icon"/>
-          <div>양약수술</div>
-        </div>
-        </button>
-      <button class="btn ">
-        <div className="pw">
-          <img src="/komediclub/image/icon3.png" className="header-icon"/>
-          <div>임플란트</div>
-        </div>
-        </button>
-      <button class="btn mx-2">
-        <div className="pw">
-          <img src="/komediclub/image/icon4.png" className="header-icon"/>
-          <div>피부</div>
-        </div>
-        </button>
-      <button class="btn ">
-        <div className="pw">
-          <img src="/komediclub/image/icon5.png" className="header-icon"/>
-          <div>지방흡입</div>
-        </div>
-        </button>
-      <button class="btn mx-2">
-        <div className="pw">
-          <img src="/komediclub/image/icon6.png" className="header-icon"/>
-          <div>코</div>
-        </div>
-        </button>
-      <button class="btn ">
-         <div className="pw">
-          <img src="/komediclub/image/icon7.png" className="header-icon"/>
-          <div>가슴</div>
-        </div>
-        </button>
-      <button class="btn mx-2">
-        <div className="pw">
-          <img src="/komediclub/image/icon8.png" className="header-icon"/>
-          <div>눈</div>
-        </div>
-        </button>
-      <button class="btn ">
-        <div className="pw">
-          <img src="/komediclub/image/icon9.png" className="header-icon"/>
-          <div>보톡스</div>
-        </div>
-        </button>
+      {/* 하단 아이콘 바 */}
+      {!showAll ? (
+        <div className="icon-scrollbar d-flex align-items-center px-3 py-2 bg-white">
+          {/* A 버튼 */}
+          <button className="btn me-2 fw-bold" onClick={() => setShowAll(true)}>A</button>
 
-        <button class="btn ">
-        <div className="pw">
-          <img src="/komediclub/image/icon1.png" className="header-icon"/>
-          <div>안면윤곽</div>
-        </div>
-               
-        </button>
-      <button class="btn ">
-        <div className="pw">
-          <img src="/komediclub/image/icon2.png" className="header-icon"/>
-          <div>양약수술</div>
-        </div>
-        </button>
-      <button class="btn ">
-        <div className="pw">
-          <img src="/komediclub/image/icon3.png" className="header-icon"/>
-          <div>임플란트</div>
-        </div>
-        </button>
-      <button class="btn mx-2">
-        <div className="pw">
-          <img src="/komediclub/image/icon4.png" className="header-icon"/>
-          <div>피부</div>
-        </div>
-        </button>
-      <button class="btn ">
-        <div className="pw">
-          <img src="/komediclub/image/icon5.png" className="header-icon"/>
-          <div>지방흡입</div>
-        </div>
-        </button>
-      <button class="btn mx-2">
-        <div className="pw">
-          <img src="/komediclub/image/icon6.png" className="header-icon"/>
-          <div>코</div>
-        </div>
-        </button>
-      <button class="btn ">
-         <div className="pw">
-          <img src="/komediclub/image/icon7.png" className="header-icon"/>
-          <div>가슴</div>
-        </div>
-        </button>
-      <button class="btn mx-2">
-        <div className="pw">
-          <img src="/komediclub/image/icon8.png" className="header-icon"/>
-          <div>눈</div>
-        </div>
-        </button>
-      <button class="btn ">
-        <div className="pw">
-          <img src="/komediclub/image/icon9.png" className="header-icon"/>
-          <div>보톡스</div>
-        </div>
-        </button>
-    </div>
+          {/* 가로 스크롤 아이콘 */}
+          <div className="d-flex overflow-auto flex-nowrap" style={{ gap: '10px' }}>
+            {icons.map((icon, idx) => (
+              <div key={idx} className="text-center">
+                <img src={`/komediclub/image/${icon.src}`} className="header-icon" />
+                <div className="small">{icon.label}</div>
+              </div>
+            ))}
+          </div>
 
-          <a>
-            &#709;
-          </a>
+          {/* ▼ 버튼 */}
+          <button className="btn ms-2 fw-bold" onClick={() => setShowAll(true)}>▼</button>
         </div>
+      ) : (
+        <div className="all-icons bg-white p-3">
+          {/* X 닫기 버튼 */}
+          <div className="text-end">
+            <button className="btn fw-bold fs-5" onClick={() => setShowAll(false)}>✕</button>
+          </div>
+
+          {/* 4열 아이콘 그리드 */}
+          <div className="d-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)', gap: '15px' }}>
+            {icons.map((icon, idx) => (
+              <div key={idx} className="text-center">
+                <img src={`/komediclub/image/${icon.src}`} className="header-icon mb-1" />
+                <div className="small">{icon.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       <Outlet />
     </>
-  )
+  );
 };
 
 export default Header;

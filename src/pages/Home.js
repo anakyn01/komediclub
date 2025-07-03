@@ -1,6 +1,6 @@
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import React, { useEffect, useState, useRef, useCallback } from 'react';
-import Event from "../include/Event";
+
 import CardCon from "../include/CardCon";
 import Seoul from "../include/Seoul";
 

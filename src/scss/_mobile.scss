@@ -1,0 +1,266 @@
+@media all and (min-width:280px) and (max-width:768px){
+    
+html{
+    body{
+        nav.pink{
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            background: #fbb4c7;
+        }
+        .nav-bottom-bar{
+            width:100%;
+        z-index:999 !important;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        position:absolute;
+        top:6%;
+        left:0; right:0;
+        border-bottom: 1px solid #ccc;
+        }
+        .button-container {
+        overflow-x: auto; /* 수평 스크롤 활성화 */
+        white-space: nowrap; /* 버튼들이 한 줄로 표시되도록 설정 */
+        padding: 2.5px 10px 2.5px 10px;
+        width:85%;
+        scrollbar-width: none !important;
+
+  /* Chrome, Edge, Safari */
+  -ms-overflow-style: none;  /* IE and Edge */
+    }
+
+    .button-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+    }
+
+    .pw{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 50px;
+     max-height: 100%;
+    flex-direction: column;
+        
+    .header-icon{
+    height:45px;
+    max-height: 100%;
+    margin-bottom: 5%;
+    }
+    div{
+        font-size: 12px;
+        max-width: 100%;
+    }
+
+    }
+    .banner-wrap{
+    //margin-top: 30%;
+        img{
+        border-radius: 10px;
+        width:100%;
+        max-width:100%;
+        }
+    }
+    .search{
+        border-radius: 20px;
+        background-color: #fdf8f8 !important;
+        text-indent: 14px;
+    }
+    .mag2 {
+    z-index: 99;
+    position: relative;
+    //background: url("/image/mag.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 2%;
+    }
+    .hash-container {
+        overflow-x: auto; /* 수평 스크롤 활성화 */
+        white-space: nowrap; /* 버튼들이 한 줄로 표시되도록 설정 */
+        width:100%;
+        scrollbar-width: none !important;
+    /* Chrome, Edge, Safari */
+  -ms-overflow-style: none;  /* IE and Edge */
+    }
+    .card-container {
+        overflow-x: auto; /* 수평 스크롤 활성화 */
+        white-space: nowrap; /* 버튼들이 한 줄로 표시되도록 설정 */
+        width:100%;
+        scrollbar-width: none !important;
+    /* Chrome, Edge, Safari */
+  -ms-overflow-style: none;  /* IE and Edge */
+    }
+.btn-round-main{
+background-color: #fbb4c7 !important;
+border-radius: 20px;
+color:white !important;
+margin-right:10px;
+}
+.btn-round-gray{
+background-color: #ccc !important;
+border-radius: 20px;
+margin-right:10px;
+}
+.ybanner{
+background: #FFFFCC;
+color: #fbb0c7;
+border-radius: 20px;
+}
+.title{
+letter-spacing: -1px;
+}
+.inner{
+    margin-right: 10px;
+    img{
+        width:100px;
+    }
+}
+.title-grayfont {
+    padding: 0 !important;
+    width: 97px;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 0.5em;
+    color: #666666;
+}
+.title-blackfont {
+    width: 97px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 11px;
+    color: #000;
+}
+.icon-group{
+        margin: 19px 0px 0px 0px;
+    width: 95vw;
+    box-sizing: border-box;
+    line-height: 5px;
+}
+.icon {
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    width: 100%;
+    margin: 5px;
+    border: 0px solid #ccc;
+        cursor: pointer;
+        .icon-pic {
+        height: 60px;
+        max-height: 100%;
+            img {
+                text-align: center;
+               height:50px;
+            }
+            .icon-bottom-text {
+                margin-top: 5px;
+                font-size: 0.7em;
+                color: #999999;
+                text-align: center;
+            }
+
+        }
+}
+.fs11{
+font-size: 11px !important;
+}
+.icobtn {
+    filter: grayscale(100%);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        .icobtn-pic {
+        width: 33px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .icobtn-text {
+    width: 33px;
+    max-width: 100%;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+}
+}
+.mainColor{
+color: #fbb0c7;
+}
+.movie-thumb{
+width:49%;
+img{
+width:49%;
+max-width:100%;
+margin-right: 1%;
+}
+}
+.fs16{
+font-size: 16px !important;
+}
+.left, .right{
+    img{
+        width:99%;
+        max-width: 100%;
+        border-radius:10px;
+
+    }
+}
+.infinit-wrap {
+        width: 100%;
+        max-width: 100%;
+    }
+    .overflow-hidden {
+        overflow: hidden;
+    }
+    article {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 1%;
+    }
+    .wiggler {
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
+        border: 1px solid #ccc;
+        background: #fff;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-bottom: 5%;
+        img {
+        width: 100%;
+        max-width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    } 
+}
+ .fs12{
+    font-size:12px !important;
+
+ } 
+     .mt5{
+margin-top:5px !important;        
+    } 
+    .ml10{
+        margin-left: 10px !important;
+    }
+    .w10{
+        width:10px !important;
+    }
+    .space-between {
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+    }
+
+ 
+
+
+
+
+    
+}
